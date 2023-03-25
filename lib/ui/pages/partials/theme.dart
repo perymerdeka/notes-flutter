@@ -9,12 +9,15 @@ const primaryClr = bluishClr;
 const Color darkGreyClr = Color(0xFF121212);
 const Color darkHeaderClr = Color(0xFF424242);
 
+// ! Custom Theme on Dark and Light Theme
 class Themes {
   static final ThemeData light = ThemeData(
     primaryColor: Colors.red,
     brightness: Brightness.light,
   );
 
-  static final ThemeData dark =
-      ThemeData(primaryColor: Colors.yellow, brightness: Brightness.light);
+  static final ThemeData dark = ThemeData(
+        primaryColor: Colors.yellow,
+        brightness: Brightness.light,
+      );
 }
