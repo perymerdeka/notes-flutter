@@ -68,4 +68,8 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    
+    // kotlin implementation
+    implementation 'androidx.work:work-runtime:2.7.0-alpha01'
+
 }

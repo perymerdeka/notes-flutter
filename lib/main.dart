@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:notesapps/services/themes_services.dart';
+import 'package:notesapps/services/themes_service.dart';
 import 'package:notesapps/ui/pages/home_page.dart';
 import 'package:notesapps/ui/partials/theme.dart';
 
