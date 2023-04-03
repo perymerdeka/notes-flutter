@@ -10,7 +10,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
   runApp(const MyApp());
-}
+} 
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
