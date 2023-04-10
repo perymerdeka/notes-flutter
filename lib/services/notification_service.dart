@@ -42,10 +42,10 @@ class NotifyHelper {
         // core setting of notifications
     await flutterLocalNotificationsPlugin.show(
       0,
-      'You change your theme',
-      'You changed your theme back !',
+      title,
+      body,
       platformChannelSpecifics,
-      payload: 'It could be anything you pass',
+      payload: 'Default_Sound',
     );
   }
 

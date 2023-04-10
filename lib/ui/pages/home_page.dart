@@ -28,11 +28,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: appBar(),
         body: Column(
-          children: const [
-            Text(
-              "Flutter Theme Data",
-              style: TextStyle(fontSize: 30),
-            ),
+          children: [
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Text(DateTime.now().toString()),
+                  ],
+                )
+              ],
+            )
           ],
         ));
   }

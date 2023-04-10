@@ -7,15 +7,20 @@ var notifyHelper = NotifyHelper();
 
 AppBar appBar() {
   return AppBar(
+    elevation: 0,
     leading: GestureDetector(
       onTap: () {
         ThemeService().switchTheme();
-        notifyHelper.displayNotification(title: "Theme Changed", body: Get.isDarkMode ? "Activated Dark Theme": "Activate Light Theme");
+        notifyHelper.displayNotification(
+            title: "Theme Changed",
+            body: Get.isDarkMode
+                ? "Activated Light Theme"
+                : "Activate Dark Theme");
       },
-      child: const Icon(
-        Icons.nightlight_round,
-        size: 20,
-      ),
+      child: Icon(
+          Get.isDarkMode ? Icons.wb_sunny_outlined : Icons.nightlight_round_outlined,
+          size: 20,
+          color: Get.isDarkMode ? Colors.white : Colors.black),
     ),
     actions: const [
       Icon(
