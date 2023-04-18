@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:notesapps/services/notification_service.dart';
 import 'package:notesapps/ui/partials/app_bar.dart';
+import 'package:notesapps/ui/partials/theme.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -37,8 +38,11 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(DateFormat.yMMMMd().format(DateTime.now())),
-                      const Text("Today")
+                      Text(
+                        DateFormat.yMMMMd().format(DateTime.now()),
+                        style: subHeadingStyle,
+                      ),
+                      Text("Today", style: headingStyle,)
                     ],
                   ),
                 )
